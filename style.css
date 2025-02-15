@@ -1,0 +1,548 @@
+/*====================================================================*/
+/* Commonly used variable */
+color_combinations{
+https://webflow.com/blog/best-color-combinations
+Blue, Pastel Pink: #2F3C7E, #FBEAEB;
+Dark charcoal, Bright yellow: #101820, #FEE715;
+Light Red, Yellow: #F96167, #F9E795;
+Cherry red, Off-white: #990011, #FCF6F5;
+Baby blue, White: #8AAAE5, #FFFFFF;
+Dark blue, Light blue: #00246B, #CADCFC;
+Sky blue, Bubblegum pink: #89ABE3, #EA738D;
+Cherry red, Bubblegum pink: #CC313D, #F7C5CC;
+Forest green, Moss green: #2C5F2D, #97BC62;
+Midnight blue, Royal blue, Burgundy red: #1E2761, #408EC6, #7A2048;
+Terracotta red, Light beige, Muted teal: #B85042, #E7E8D1, #A7BEAE;
+Pastel olive green, Salmon pink: #A1BE95, #F98866;
+Deep periwinkle, Soft lilac: #735DA5, #D3C5E5;
+Salmon pink, Soft peach: #F98866, #FFF2D7;
+Seafoam green, Light blue: #C4DFE6, #66A5AD;
+Teal, Light green: #20948B, #6AB187;
+Dark green, Light gray: #31473A, #EDF4F2;
+Cranberry red, Bubblegum: #F52549, #FA6775;
+Deep blue, Orange-red, Yellow-orange: #375E97, #FB6542, #FFBB00;
+Mauve, Dusty rose, Soft blue-gray: #962E2A, #E3867D, #CEE6F2;
+Dark reddish brown, Taupe, Light peachy brown: #330000, #73605B, #D09683;
+Dark navy blue, Bright scarlet red, Light lemon yellow: #5031F, #CB0000, #E4EA8C;
+Teal blue, Light blue, Light gray: #1995AD, #A1D6E2, #F1F1F2;
+Deep navy blue, Bright red, Pale pink: #002C54, #C5001A, #FDF6F6;
+Dark chestnut brown, Burnt sienna, Soft cream: #46211A, #A43820, #F1D3B2;
+Dark charcoal, Deep rust, Sky blue: #2A3132, #763626, #90AFC5
+}
+:root {
+    --primary: #F96167; #20948B;
+    --secondary: #F9E795; #6AB187;
+    --background_color: linear-gradient(to bottom, var(--primary) 0%, var(--secondary) 100%);
+    --button_color: #FFD479; /* Color for all buttons */
+    --section_background: var(--secondary);
+    --navbar_background: var(--secondary);
+    --header_color: var(--background_color);
+    --footer_color: #444;
+    --gray0: #000; /* Medium Grey */
+    --gray1: #111; /* Medium Grey */
+    --gray2: #222; /* Medium Grey */
+    --gray3: #333; /* Medium Grey */
+    --gray4: #444; /* Medium Grey */
+    --gray5: #555; /* Medium Grey */
+    --gray6: #666; /* Medium Grey */
+    --gray7: #777; /* Medium Grey */
+    --gray8: #888; /* Medium Grey */
+    --gray9: #999; /* Medium Grey */
+}
+/*====================================================================*/
+/* Global Configuration */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 0.1%;
+}
+/* Body Configuration */
+body {
+    background: var(--background_color);
+    color: #000000; /* Adjust text to be readable */
+    font-family: 'Arial', sans-serif; /* Customize typography */
+    font-size: 16px;
+    line-height: 30px;
+    text-align: justify;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+/* h1 Styling */
+body h1 {
+    font-size: 40px; /* Adjust for your design */
+    text-transform: uppercase; /* Makes all text uppercase */
+    font-weight: bold; /* Optional for emphasis */
+    color: #333; /* Adjust as needed */
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+/* h2 Styling */
+body h2 {
+    font-size: 28px; /* Slightly smaller than h1 */
+    text-transform: capitalize; /* Title case: capitalizes the first letter of each word */
+    font-weight: bold; /* Optional */
+    color: #444; /* Slightly lighter than h1 */
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+/* h3 Styling */
+body h3 {
+    font-size: 22px; /* Smaller than h2 */
+    text-transform: capitalize; /* Title case or change to 'none' for sentence case */
+    font-weight: normal; /* Optional, for less emphasis */
+    color: #555; /* Lighter shade */
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+/*====================================================================*/
+/* Header configuration */
+header {
+    background-color: var(--header_color);
+    padding: 20px;
+    height: 2vh;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    z-index: 999;
+    top: 0px;
+}
+/* Main configuration */
+main {
+    margin: 20px;
+    padding: 20px;
+}
+/* Footer configuration */
+footer {
+    background-color: var(--footer_color);
+    color: white;
+    width: 100%;
+    height: 2vh;
+    text-align: center;
+    line-height: 0vh;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+}
+/*====================================================================*/
+/* Navigation section styling */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--navbar_background);
+    padding: 5px;
+    border-radius: 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: fit-content;
+    margin: 1px auto;
+}
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 15px;
+}
+.nav-item a {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    color: #333;
+    font-weight: 500;
+    font-size: 20px;
+    transition: all 0.2s ease;
+}
+/* Icon-specific styles */
+.nav-icon {
+    width: 28px; /* Adjust size */
+    height: 28px;
+    vertical-align: middle; /* Aligns the icon properly */
+    transition: transform 0.3s; /* Smooth hover effect */
+}
+.nav-icon:hover {
+    transform: scale(1.5); /* Slight zoom on hover */
+
+}
+/* Hover Effect */
+.nav-item a:hover {
+    background-color: #8f8f8f;
+
+}
+/*====================================================================*/
+/* Home Section Styles */
+#home-section {
+    background-color: var(--section_background);
+    border-radius: 8px;
+    position: relative;
+    padding: 40px;
+    margin: 40px auto;
+    max-width: 1200px;
+    min-height: 200px;
+    overflow: hidden;
+}
+/* Skills Container */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap; /* Icons wrap if container width is exceeded */
+    justify-content: center; /* Center align the icons */
+    gap: 40px; /* Spacing to prevent overlaps */
+    padding: 0px; /* Add padding for space to float */
+    position: relative; /* Necessary for floating animations */
+    width: 100%;
+    height: 100%;
+}
+/* Skill Icons */
+.skill-icon {
+    width: 80px; /* Icon size */
+    height: 80px; /* Maintain aspect ratio */
+    animation: bubble-move 6s ease-in-out infinite; /* Floating effect */
+    transition: transform 0.3s;
+    position: relative;
+    top: calc(10% + 300px * random()); /* Random starting positions */
+    left: calc(10% + 1000px * random()); /* Random starting positions */
+}
+/* Randomize Animation Delay */
+.skill-icon:nth-child(1) { animation-delay: 0.99s; }
+.skill-icon:nth-child(2) { animation-delay: 0.22s; }
+.skill-icon:nth-child(3) { animation-delay: 0.49s; }
+.skill-icon:nth-child(4) { animation-delay: 0.08s; }
+.skill-icon:nth-child(5) { animation-delay: 0.87s; }
+.skill-icon:nth-child(6) { animation-delay: 0.25s; }
+.skill-icon:nth-child(7) { animation-delay: 0.54s; }
+.skill-icon:nth-child(8) { animation-delay: 0.95s; }
+.skill-icon:nth-child(9) { animation-delay: 0.79s; }
+.skill-icon:nth-child(10) { animation-delay: 0.66s; }
+.skill-icon:nth-child(11) { animation-delay: 0.38s; }
+.skill-icon:nth-child(12) { animation-delay: 0.81s; }
+.skill-icon:nth-child(13) { animation-delay: 0.02s; }
+.skill-icon:nth-child(14) { animation-delay: 0.93s; }
+.skill-icon:nth-child(15) { animation-delay: 0.09s; }
+.skill-icon:nth-child(16) { animation-delay: 0.20s; }
+.skill-icon:nth-child(17) { animation-delay: 0.49s; }
+.skill-icon:nth-child(18) { animation-delay: 0.01s; }
+.skill-icon:nth-child(19) { animation-delay: 0.18s; }
+.skill-icon:nth-child(20) { animation-delay: 0.25s; }
+.skill-icon:nth-child(21) { animation-delay: 0.59s; }
+.skill-icon:nth-child(22) { animation-delay: 0.71s; }
+/* Bubble Animation */
+@keyframes bubble-move {
+    0% { transform: translate(0, 0); }
+    10% { transform: translate(10px, -20px); }
+    20% { transform: translate(-15px, 11px); }
+    30% { transform: translate(20px, 10px); }
+    40% { transform: translate(-1px, 5px); }
+    50% { transform: translate(-5px, -15px); }
+    60% { transform: translate(20px, -10px); }
+    70% { transform: translate(10px, -25px); }
+    80% { transform: translate(-15px, -20px); }
+    90% { transform: translate(20px, -20px); }
+    100% { transform: translate(0, 0); }
+}
+/*====================================================================*/
+/* Stats Section Styling */
+/* Style the leetcode-status section */
+#stats-section {
+    background-color: var(--section_background);
+    border-radius: 8px;
+    position: relative;
+    padding: 40px;
+    margin: 40px auto;
+    max-width: 1200px;
+    min-height: 200px;
+    overflow: hidden;
+}
+.stats-container{
+    display: flex; /* Ensures the photo and text are side by side */
+    flex-wrap: wrap; /* Icons wrap if container width is exceeded */
+    flex-direction: row; /* Aligns items in a horizontal row */
+    justify-content: center; /* Adds space between photo and text */
+    align-items: center; /* Vertically centers items */
+    gap: 40px; /* Spacing to prevent overlaps */
+    padding: 0px; /* Add padding for space to float */
+    position: relative; /* Necessary for floating animations */
+    width: 100%;
+    height: 100%;
+}
+/* Style for individual cards */
+.leetcode-card,
+ .github-card {
+  max-width: 800px;
+  min-width: 500px;
+  border-radius: 10px; /* Rounded corners */
+  overflow: hidden; /* Ensures iframe doesn't overflow */
+}
+/* Style for the iframe */
+.card-frame {
+  width: 100%;
+  height: 200px; /* Adjust height to fit content */
+  border: none;
+  border-radius: 5px; /* Matches parent border radius */
+}
+/*====================================================================*/
+/* About Section Styling */
+#about-section {
+    background-color: var(--section_background);
+    border-radius: 8px;
+    position: relative;
+    padding: 40px;
+    margin: 40px auto;
+    max-width: 1200px;
+    min-height: 200px;
+    overflow: hidden;
+}
+.about-container{
+    display: flex; /* Ensures the photo and text are side by side */
+    flex-wrap: wrap; /* Icons wrap if container width is exceeded */
+    flex-direction: row; /* Aligns items in a horizontal row */
+    justify-content: center; /* Adds space between photo and text */
+    align-items: center; /* Vertically centers items */
+    gap: 40px; /* Spacing to prevent overlaps */
+    padding: 0px; /* Add padding for space to float */
+    position: relative; /* Necessary for floating animations */
+    width: 100%;
+    height: 100%;
+}
+/* Photo on the left */
+.about-photo {
+    flex: 0 0 40%; /* Makes the photo take up 1 part of the space */
+    text-align: center; /* Center-aligns the photo inside its container */
+}
+.about-photo img {
+    max-width: 100%; /* Ensures the image doesn't overflow */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+/* Text on the right */
+.about-text {
+    flex: 0 0 50%; /* Makes the text take up 1 part of the space */
+    margin-left: 20px; /* Adds space between the photo and text */
+    text-align: justify; /* Justifies text para */
+}
+.about-text p {
+    font-size: 18px;
+    line-height: 1.6    ;
+}
+/*====================================================================*/
+/* Projects Section Styles */
+#project-section {
+    background-color: var(--section_background);
+    border-radius: 8px;
+    position: relative;
+    padding: 40px;
+    margin: 40px auto;
+    max-width: 1200px;
+    min-height: 200px;
+    overflow: hidden;
+}
+/* Container for Cards */
+.project-container{
+    display: flex; /* Ensures the photo and text are side by side */
+    flex-wrap: wrap; /* Icons wrap if container width is exceeded */
+    flex-direction: row; /* Aligns items in a horizontal row */
+    justify-content: center; /* Adds space between photo and text */
+    align-items: center; /* Vertically centers items */
+    gap: 40px; /* Spacing to prevent overlaps */
+    padding: 10px; /* Add padding for space to float */
+    position: relative; /* Necessary for floating animations */
+    width: 100%;
+    height: 100%;
+}
+/* Individual Project Card */
+.project-card {
+    background-color: #ffffff; /* White background for cards */
+    border: 1px solid #ddd; /* Subtle border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow */
+    padding: 20px;
+    width: 300px; /* Fixed width */
+    height: 300px; /* Make the card square */
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effects */
+    display: flex; /* Flexbox for aligning content */
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+}
+/* Hover Effect */
+.project-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+}
+/* Image Carousel */
+.image-carousel {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden; /* Hide overflowing images */
+    border-radius: 10px; /* Rounded corners for the carousel */
+    display: flex;
+    justify-content: center; /* Center the images horizontally */
+    align-items: center; /* Center the images vertically */
+}
+.carousel-image {
+    width: 100%;
+    height: auto;
+    object-fit: contain; /* Ensure images fill the carousel area */
+    transition: opacity 1s ease; /* Smooth fade effect */
+    opacity: 0; /* Initially hidden */
+    position: absolute;
+}
+.carousel-image.active {
+    opacity: 1; /* Show active image */
+
+}
+/* Styles for Tableau Project Thumbnail */
+.tableau-thumbnail {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+.tableau-thumbnail:hover {
+
+    transform: scale(1.05);
+}
+
+/*====================================================================*/
+#contact-section {
+    background-color: var(--section_background);
+    border-radius: 8px;
+    position: relative;
+    padding: 40px;
+    margin: 40px auto;
+    max-width: 1200px;
+    min-height: 200px;
+    overflow: hidden;
+}
+/* Overall Container */
+.contact-container {
+    display: flex; /* Ensures the photo and text are side by side */
+    flex-wrap: wrap; /* Icons wrap if container width is exceeded */
+    flex-direction: row; /* Aligns items in a horizontal row */
+    justify-content: center; /* Adds space between photo and text */
+    align-items: stretch; /* Vertically centers items */
+    gap: 10px; /* Spacing to prevent overlaps */
+    padding: 10px; /* Add padding for space to float */
+    position: relative; /* Necessary for floating animations */
+    width: 100%;
+    height: 100%;
+}
+/* Left Column (40%) */
+.contact-left {
+    flex: 0 0 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px; /* Add space between email/phone and social links */
+    padding-right: 20px; /* Add some space from the separator */
+    border-right: 2px solid #ccc; /* Add the vertical separator line */
+}
+.contact-info {
+    font-size: 20px;
+    padding: 20px;
+    line-height: 15px;
+    }
+.contact-info a {
+    color: #444; /* Highlight links with blue color */
+    text-decoration: none;
+}
+.contact-info a:hover {
+
+    text-decoration: underline;
+}
+.contact-social {
+    display: flex;
+    flex-wrap: wrap; /* Icons wrap if container width is exceeded */
+    flex-direction: row; /* Aligns items in a horizontal row */
+    justify-content: center; /* Centers the icons */
+    padding: 20px;
+    gap: 20px; /* Space between icons */
+}
+.contact-social a {
+
+    text-decoration: none;
+}
+.icon {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+.icon:hover {
+
+    transform: scale(1.5); /* Enlarge icon on hover */
+}
+/* Map Frame Styling */
+.map-frame {
+    margin-top: 20px; /* Add spacing from address */
+    border: 2px solid #ddd; /* Border around the map */
+    border-radius: 10px; /* Optional rounded corners */
+    overflow: hidden; /* Ensures the map stays within the border */
+    height: 250px; /* Fixed height for square frame */
+}
+/* Right Column */
+.contact-form {
+    flex: 0 0 50%;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    background-color: #fff; /* Optional background */
+    gap: 15px; /* Space between form elements */
+    padding: 20px; /* Optional padding */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto; /* Optional: Center the form horizontally */
+    max-width: 400px;
+    justify-content: center;
+}
+.contact-form form{
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    gap: 2px; /* Space between form elements */
+    padding: 20px; /* Optional padding */
+}
+.contact-form label {
+    font-weight: bold;
+    color: #555; /* Label text color */
+    display: block;
+}
+.contact-form input,
+.contact-form textarea {
+    width: 100%; /* Make inputs stretch to the form width */
+    min-width: 100px; /* Optional: Minimum input width */
+    padding: 10px; /* Add padding for better UX */
+    border: 1px solid #ccc; /* Add a border */
+    border-radius: 5px; /* Rounded corners for inputs */
+    font-size: 16px; /* Ensure readable text size */
+    box-sizing: border-box; /* Ensures padding is included in width calculation */
+    color: #333; /* Text color */
+    background-color: #fff; /* Background color */
+}
+.contact-form button {
+    width: fit-content; /* Make button fit its content */
+    align-self: center; /* Center button horizontally */
+    padding: 10px 20px; /* Padding for the button */
+    border: none;
+    background-color: #007bff; /* Blue background */
+    color: white; /* White text */
+    font-size: 16px;
+    cursor: pointer; /* Pointer cursor for better UX */
+    border-radius: 5px; /* Rounded corners for button */
+}
+.contact-form button:hover {
+
+    background-color: #0056b3;
+}
+
+/*====================================================================*/
+/* tableau.html */
+#vizContainer{
+    margin-top: 51px;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}

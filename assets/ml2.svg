@@ -1,0 +1,34 @@
+<svg height="500px" width="500px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	 viewBox="0 0 500 500" xml:space="preserve">
+<line x1="20" y1="490" x2="20" y2="10" stroke="black" stroke-width="7"/>
+<line x1="10" y1="480" x2="490" y2="480" stroke="black" stroke-width="7"/>
+
+<defs>
+	<circle id="red" r="30" fill="red"/>
+	<circle id="green" r="30" fill="green"/>
+</defs>
+<use href="#red" x="250"  y= "350"/>
+<use href="#red" x="300"  y= "280"/>
+<use href="#red" x="310"  y= "380"/>
+<use href="#red" x="270"  y= "430"/>
+<use href="#red" x="365"  y= "350"/>
+<use href="#red" x="390"  y= "290"/>
+<use href="#red" x="400"  y= "220"/>
+<use href="#red" x="425"  y= "375"/>
+<use href="#red" x="385"  y= "440"/>
+<use href="#red" x="450"  y= "320"/>
+
+<use href="#green" x="100"  y= "240"/>
+<use href="#green" x="170"  y= "270"/>
+<use href="#green" x="190"  y= "200"/>
+<use href="#green" x="130"  y= "140"/>
+<use href="#green" x="220"  y= "130"/>
+<use href="#green" x="170"  y= "80"/>
+<use href="#green" x="240"  y= "60"/>
+<use href="#green" x="320"  y= "110"/>
+<use href="#green" x="270"  y= "175"/>
+
+
+<line x1="50" y1="450" x2="450" y2="50" stroke="purple" stroke-width="8"/>
+
+</svg>

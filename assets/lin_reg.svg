@@ -1,0 +1,44 @@
+<svg height="500px" width="500px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	 viewBox="0 0 500 500" xml:space="preserve">
+<line x1="20" y1="490" x2="20" y2="10" stroke="black" stroke-width="7"/>
+<line x1="10" y1="480" x2="490" y2="480" stroke="black" stroke-width="7"/>
+
+<defs>
+    <circle id="dot" r="7" fill="black"/>
+</defs>
+
+<use href="#dot" x="70"  y= "414"/>
+<use href="#dot" x="77"  y= "432"/>
+<use href="#dot" x="85"  y= "404"/>
+<use href="#dot" x="101"  y= "364"/>
+<use href="#dot" x="120"  y= "393"/>
+<use href="#dot" x="142"  y= "373"/>
+<use href="#dot" x="150"  y= "392"/>
+<use href="#dot" x="151"  y= "338"/>
+<use href="#dot" x="155"  y= "321"/>
+<use href="#dot" x="160"  y= "347"/>
+<use href="#dot" x="191"  y= "317"/>
+<use href="#dot" x="208"  y= "280"/>
+<use href="#dot" x="214"  y= "260"/>
+<use href="#dot" x="232"  y= "296"/>
+<use href="#dot" x="233"  y= "278"/>
+<use href="#dot" x="240"  y= "235"/>
+<use href="#dot" x="265"  y= "220"/>
+<use href="#dot" x="279"  y= "227"/>
+<use href="#dot" x="287"  y= "245"/>
+<use href="#dot" x="307"  y= "167"/>
+<use href="#dot" x="328"  y= "189"/>
+<use href="#dot" x="339"  y= "160"/>
+<use href="#dot" x="339"  y= "182"/>
+<use href="#dot" x="350"  y= "109"/>
+<use href="#dot" x="360"  y= "138"/>
+<use href="#dot" x="370"  y= "150"/>
+<use href="#dot" x="392"  y= "142"/>
+<use href="#dot" x="407"  y= "89"/>
+<use href="#dot" x="409"  y= "99"/>
+<use href="#dot" x="414"  y= "73"/>
+<use href="#dot" x="445"  y= "67"/>
+
+<line x1="50" y1="450" x2="450" y2="50" stroke="red" stroke-width="8"/>
+
+</svg>
