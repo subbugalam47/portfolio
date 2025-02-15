@@ -1,17 +1,37 @@
-title: "Subhas Galam - Data Scientist"
-logo: /assets/img/headshot_circle.png
+title: "Subhas Galam"
+logo: "/assets/img/headshot_circle.png"
+remote_theme: "mmistakes/minimal-mistakes"
 show_downloads: false
-theme: jekyll-theme-cayman
+description: "Data Scientist | ML Engineer | DevOps | Cloud"
 
-# Additional Enhancements
-description: "Data Scientist | Machine Learning | NLP | DevOps | Cloud"
-github:
-  is_project_page: false
-  show_downloads: false
+# Navigation
+header_pages:
+  - index.md
+  - about.md
+  - projects.md
+  - blog.md
 
-# Links
-linkedin: "https://www.linkedin.com/in/subbu-galam"
-github: "https://github.com/subbugalam47"
-leetcode: "https://leetcode.com/u/subbu-galam_69/"
-hackerrank: "https://www.hackerrank.com/profile/subbugalam69"
-scaler: "https://scaler.com/academy/profile/edbf497cca27"
+# Sidebar Settings
+sidebar:
+  - image: "/assets/img/headshot_circle.png"
+    image_circular: true
+    tagline: "Data Science | ML | NLP | DevOps"
+    social_links:
+      - name: "GitHub"
+        url: "https://github.com/subbugalam47"
+      - name: "Leetcode"
+        url: "https://leetcode.com/u/subbu-galam_69/"
+      - name: "LinkedIn"
+        url: "https://www.linkedin.com/in/subbu-galam"
+      - name: "HackerRank"
+        url: "https://www.hackerrank.com/profile/subbugalam69"
+
+# Plugins (GitHub auto-runs Jekyll)
+plugins:
+  - jekyll-include-cache
+  - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-archives
+  - jekyll-paginate
+  - jekyll-minifier
