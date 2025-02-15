@@ -1,4 +1,17 @@
-title: Subhas Galam
+title: "Subhas Galam - Data Scientist"
 logo: /assets/img/headshot_circle.png
-show_downloads: False
-theme: jekyll-theme-minimal
+show_downloads: false
+theme: jekyll-theme-cayman
+
+# Additional Enhancements
+description: "Data Scientist | Machine Learning | NLP | DevOps | Cloud"
+github:
+  is_project_page: false
+  show_downloads: false
+
+# Links
+linkedin: "https://www.linkedin.com/in/subbu-galam"
+github: "https://github.com/subbugalam47"
+leetcode: "https://leetcode.com/u/subbu-galam_69/"
+hackerrank: "https://www.hackerrank.com/profile/subbugalam69"
+scaler: "https://scaler.com/academy/profile/edbf497cca27"
