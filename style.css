@@ -31,7 +31,7 @@ Dark charcoal, Deep rust, Sky blue: #2A3132, #763626, #90AFC5
 }
 :root {
     --primary: #F96167; #20948B;
-    --secondary: #F9E795; #6AB187;
+    --secondary: #119278; #6AB187;
     --background_color: linear-gradient(to bottom, var(--primary) 0%, var(--secondary) 100%);
     --button_color: #FFD479; /* Color for all buttons */
     --section_background: var(--secondary);
@@ -58,7 +58,7 @@ html {
 /* Body Configuration */
 body {
     background: var(--background_color);
-    color: #000000; /* Adjust text to be readable */
+    color: #270202; /* Adjust text to be readable */
     font-family: 'Arial', sans-serif; /* Customize typography */
     font-size: 16px;
     line-height: 30px;
@@ -546,3 +546,4 @@ footer {
     height: 100%;
     justify-content: center;
 }
+
