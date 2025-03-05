@@ -30,7 +30,7 @@ Dark chestnut brown, Burnt sienna, Soft cream: #46211A, #A43820, #F1D3B2;
 Dark charcoal, Deep rust, Sky blue: #2A3132, #763626, #90AFC5
 }
 :root {
-    --primary: #F96167; #20948B;
+    --primary: #0f2f2d; #20948B;
     --secondary: #119278; #6AB187;
     --background_color: linear-gradient(to bottom, var(--primary) 0%, var(--secondary) 100%);
     --button_color: #FFD479; /* Color for all buttons */
