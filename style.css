@@ -30,24 +30,14 @@ Dark chestnut brown, Burnt sienna, Soft cream: #46211A, #A43820, #F1D3B2;
 Dark charcoal, Deep rust, Sky blue: #2A3132, #763626, #90AFC5
 }
 :root {
-    --primary: #0f2f2d; #20948B;
-    --secondary: #119278; #6AB187;
+    --primary: #1a4645; /* Darker teal */
+    --secondary: #7fc8a9; /* Soft mint green */
     --background_color: linear-gradient(to bottom, var(--primary) 0%, var(--secondary) 100%);
-    --button_color: #FFD479; /* Color for all buttons */
-    --section_background: var(--secondary);
-    --navbar_background: var(--secondary);
+    --button_color: #f5b971; /* Warm peach for buttons */
+    --section_background: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+    --navbar_background: rgba(255, 255, 255, 0.15); /* Slightly more opaque white */
     --header_color: var(--background_color);
-    --footer_color: #444;
-    --gray0: #000; /* Medium Grey */
-    --gray1: #111; /* Medium Grey */
-    --gray2: #222; /* Medium Grey */
-    --gray3: #333; /* Medium Grey */
-    --gray4: #444; /* Medium Grey */
-    --gray5: #555; /* Medium Grey */
-    --gray6: #666; /* Medium Grey */
-    --gray7: #777; /* Medium Grey */
-    --gray8: #888; /* Medium Grey */
-    --gray9: #999; /* Medium Grey */
+    --footer_color: #1a4645; /* Match primary color */
 }
 /*====================================================================*/
 /* Global Configuration */
@@ -58,14 +48,26 @@ html {
 /* Body Configuration */
 body {
     background: var(--background_color);
-    color: #270202; /* Adjust text to be readable */
-    font-family: 'Arial', sans-serif; /* Customize typography */
+    color: #ffffff; /* White text for better contrast */
+    font-family: 'Arial', sans-serif;
     font-size: 16px;
     line-height: 30px;
     text-align: justify;
     overflow-x: hidden;
     margin: 0;
     padding: 0;
+}
+/* Header text colors */
+body h1 {
+    color: #ffffff;
+}
+
+body h2 {
+    color: #f0f0f0;
+}
+
+body h3 {
+    color: #e0e0e0;
 }
 /* h1 Styling */
 body h1 {
@@ -149,7 +151,7 @@ footer {
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 30px;
-    color: #333;
+    color: #ffffff;
     font-weight: 500;
     font-size: 20px;
     transition: all 0.2s ease;
@@ -167,8 +169,7 @@ footer {
 }
 /* Hover Effect */
 .nav-item a:hover {
-    background-color: #8f8f8f;
-
+    background-color: rgba(255, 255, 255, 0.2);
 }
 /*====================================================================*/
 /* Home Section Styles */
